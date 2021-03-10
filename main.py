@@ -7,8 +7,8 @@ import requests
 from time import sleep
 from vk_api import VkApi
 from vk_api.upload import VkUpload
-vk_session = vk_api.VkApi(token='9ab0705683541b3a566ee03c41aca4dee96969752fbed94efc7ea1e4fb5290889517498b68d10c9f8d09e')
-longpoll = VkBotLongPoll(vk_session, 201399356)
+vk_session = vk_api.VkApi(token='token')
+longpoll = VkBotLongPoll(vk_session, id)
 vk = vk_session.get_api()   # Выполняем авторизацию от имени сообщества
 upload = VkUpload(vk)
 
